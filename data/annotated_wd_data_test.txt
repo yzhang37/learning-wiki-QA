@@ -225,7 +225,7 @@ Q45981	R136	Q2080089	what is the funk group known for rhythm and blues
 Q345494	R86	Q696855	which film did ryuichi sakamoto create the music for 
 Q1297	R19	Q3568863	what novelist was born in chicago?
 Q862086	R172	Q167829	Who is of the indian people
-Q10367240	P364	Q5146	what language was used in the film samba riachao
+Q3470691	P364	Q5146	what language was used in the film samba riachao
 Q4934859	R138	Q1209252	what group was named after bobby clancy
 Q4728629	P136	Q45981	What genre is all because of you associated with
 Q720581	R40	Q16016262	who is paul reubens's father
@@ -470,7 +470,7 @@ Q944128	P1303	Q46185	timothy b. schmit plays what instrument?
 Q1332140	P17	Q16	What country does the ellice river run through
 Q19842222	R136	Q3783891	What's a crime fiction film released in 2008
 Q63088	P413	Q193592	what position does horst heldt play 
-Q5234651	P509	Q11707850	how did david hallifax die
+Q5234651	P509	Q3221083	how did david hallifax die
 Q6070740	R272	Q335736	what film did the irish film board produce 
 Q16105826	P19	Q1489	Where was alfredo zacarias born?
 Q3576648	P495	Q142	what european country is fanny straw hair from
@@ -492,7 +492,7 @@ Q3413655	P57	Q2475653	who directed the film ram lakhan
 Q38848	R136	Q6299855	who performs heavy metal  music
 Q1054574	R136	Q2529685	Name a romance genre flim
 Q5444902	P413	Q193592	what position is fernando ribeiro fernandes charged of
-Q17098977	P136	Q182015	What type of film is redirected?
+Q12671094	P136	Q182015	What type of film is redirected?
 Q4094404	P27	Q36	which european nationality does henryk borowski belong to?
 Q7560017	P175	Q1677123	Which artist recorded somethin' slick!?
 Q2543979	P136	Q145	whats the netflix genre of the film the mirror crack'd
@@ -641,7 +641,7 @@ Q8028271	P57	Q6256182	Who directed the movie without you i'm nothing?
 Q270692	R86	Q3522222	What movie did jonathan davis write the score for
 Q2915751	P136	Q289	Which netflix genre is the jewel in the crown categorized under
 Q24925	R136	Q1190888	what is a science fiction book?
-Q3202866	P50	Q242643	who is the author of empire of ivory?
+Q2024347	P50	Q242643	who is the author of empire of ivory?
 Q188539	R136	Q180880	who is an artist that performs glam metal 
 Q323787	P364	Q188	what language was kamikaze 1989 filmed in
 Q5136080	P136	Q211756	what kind of music is featured on the album wild. club'in
@@ -862,7 +862,7 @@ Q2918159	P136	Q9730	What kind of music is aldo parisot known for
 Q2054410	P19	Q851292	where was willians domingos fernandes given birth at?
 Q7308821	P27	Q145	which country is reginald mountain from
 Q2001	R58	Q181086	which film did stanley kubrick write 
-Q547341	R272	Q15039612	What movie did animal logic produce 
+Q547341	R272	Q126800	What movie did animal logic produce 
 Q1779938	P364	Q1860	which language is primarily used in alice's restaurant
 Q727703	R170	Q2861270	which characters did keith giffen create
 Q17431703	P495	Q30	where is the movie music for madame from
@@ -1031,7 +1031,7 @@ Q6111803	P413	Q462471	Which position does the basketball player jack cooley play
 Q705624	P20	Q36600	whats the location of jurriaan andriessen's death
 Q6722312	P264	Q2494570	who is mac macleod signed with
 Q2464180	P289	Q593485	what kind of ship is ss jeremiah obrien
-Q7849560	P413	Q336286	in football what position does tserenjav enkhjargal play
+Q4506465	P413	Q336286	in football what position does tserenjav enkhjargal play
 Q5205653	P27	Q30	what country is dmw greer from
 Q963045	P136	Q130232	what kinds of movie is bad day at black rock
 Q1345	R19	Q1566935	who is a pitcher born in philadelphia
@@ -1164,7 +1164,7 @@ Q668	R136	Q7709347	What movie will be found under the india netflix genre
 Q3421383	P136	Q459290	what kinds of movie is razor blade smile
 Q7588241	P20	Q38	where did st. gerard majella annual novena die
 Q231019	R58	Q6308571	which movie did agnieszka holland write
-Q19572184	P136	Q93196	What kind of film is imaandaar?
+Q11033765	P136	Q93196	What kind of film is imaandaar?
 Q518854	R264	Q608233	which artist is signed with delicious vinyl?
 Q10307546	P136	Q217191	What kind of artist is jock bartley?
 Q936037	P58	Q56093	who wrote victor victoria
@@ -1445,7 +1445,7 @@ Q7032030	P27	Q22	what country is nieves mathews from
 Q37073	R136	Q4895645	Name a pop music artist. 
 Q6143697	P106	Q36180	What was James Stokes' profession? 
 Q193300	R58	Q179102	what film did osamu tezuka write?
-Q5237124	P136	Q7033959	what type of dialect is spoken in the tiramisu movie
+Q2110607	P136	Q7033959	what type of dialect is spoken in the tiramisu movie
 Q2463838	P86	Q202550	who composed life for rent?
 Q2634139	P21	Q6581097	is stefán logi magnússon male or female
 Q491868	R131	Q1869918	Which village is in arenac county?
@@ -1462,7 +1462,7 @@ Q7699287	P404	Q208850	is ten pin alley single-player or multiplayer
 Q5486836	P40	Q2832952	Whats the name of a child of frank gibney
 Q5346764	P172	Q49085	What is edwin r. murray's ethnicity?
 Q507189	R162	Q108946	which movie was produced by andrew scheinman
-Q7897089	P136	Q182015	what is the genre of the film unman, wittering and zigo
+Q7886755	P136	Q182015	what is the genre of the film unman, wittering and zigo
 Q420822	P112	Q5297927	who is the founder of gap inc.?
 Q45	R276	Q2530225	What is the name of a battle that took place in portugal
 Q837538	P19	Q36312	where was nolan baumgartner born at?
@@ -1740,7 +1740,7 @@ Q4663368	P175	Q1383840	who is the recording artist for abandoned garden?
 Q5454231	P50	Q104859	Who authored first on the moon
 Q881573	P86	Q23848	Name a composer for the film Jacob?
 Q17285413	P27	Q668	Where is joy sengupta from?
-Q7490667	P136	Q130232	what kind of film is satruvu
+Q13010368	P136	Q130232	what kind of film is satruvu
 Q357102	R50	Q816528	what books have lew wallace written?
 Q4411943	P136	Q83270	what kind of music is ... make you breathe?
 Q49084	R136	Q7758780	What is the name of a short story?
@@ -1890,7 +1890,7 @@ Q83440	R136	Q6544541	Name a county album.
 Q6895044	R404	Q754335	what is a game that features multiplayer 
 Q5636664	P136	Q828305	what type of music does habeas corpus perform?
 Q178517	R676	Q526812	What is a song that david gilmour wrote the lyrics for
-Q16249633	P136	Q668	What netflix genre does jeena sirf merre liye belong to?
+Q12428988	P136	Q668	What netflix genre does jeena sirf merre liye belong to?
 Q3889326	R58	Q3419356	which film was stanley j. weyman the film story contributor for 
 Q3087907	P19	Q168376	where was luan garcia teixeira born?
 Q924993	P264	Q183387	who is the record label for the orb?
@@ -2035,7 +2035,7 @@ Q838178	P404	Q6895044	what gameplay mode is the videogame beatmania iidx 8th sty
 Q1966455	P27	Q117	where is nathan apea aferi from
 Q230383	P27	Q145	which country is kelly macdonald from
 Q28389	R106	Q2490300	Name a screenwriter.
-Q15059374	P364	Q1617	which language was spoken in mirza ghalib
+Q10968093	P364	Q1617	which language was spoken in mirza ghalib
 Q3445813	P509	Q12152	how did roy roberts die
 Q235637	R40	Q178525	Who is the parent of alix of france?
 Q7549064	P136	Q130232	what type of film is so close to paradise?
@@ -2518,7 +2518,7 @@ Q1168150	P58	Q16397	who is the story of circle of iron by
 Q636219	P404	Q6895044	What is a gameplay mode from the game gears of war
 Q4746854	R58	Q13152993	what movie did amit kumar write?
 Q7438909	P175	Q1474525	Which artist made scream with a view
-Q2102493	P17	Q155	what country is alvorada the second level division for
+Q22060164	P17	Q155	what country is alvorada the second level division for
 Q254596	P19	Q47164	Where was dominique dunne born?
 Q1850330	P136	Q11399	What type of music is the walkmen
 Q6536924	P19	Q185404	Where was  lewis nott born
@@ -2604,7 +2604,7 @@ Q794156	P264	Q183387	which label is the band azteca signed to
 Q186040	R19	Q2157457	who was born in ayodhya
 Q130232	R136	Q4892355	which movie is drama
 Q314215	R50	Q7301253	what country is maiwa language spoken in
-Q16253560	P495	Q668	what country is rang filmed in 
+Q12448525	P495	Q668	what country is rang filmed in 
 Q2528338	P737	Q9391	who was the main source of influence for joseph margolis
 Q5105958	P413	Q193592	What position does footballer chris brandon play?
 Q7828051	P136	Q38848	what kind of music does total pwnage perform
@@ -3843,7 +3843,7 @@ Q7151444	P19	Q23661	what is paul hutchison's place of birth
 Q6366035	P136	Q11399	what genre is kao u snu – ekv live 1991
 Q74994	P20	Q1781	what city did joachim rumohr pass away
 Q1361397	P19	Q1085	where was otto jelinek born
-Q7677888	P136	Q45981	what kind of music is take a look
+Q1988982	P136	Q45981	what kind of music is take a look
 Q5504849	P607	Q362	which war was fritz albrecht a part of
 Q23901	R123	Q968138	What video game did codemasters release?
 Q724169	P20	Q220	Where did john berchmans die?
@@ -4253,7 +4253,7 @@ Q6607	R1303	Q505285	What is the name of someone who is very good at the guitar
 Q7503321	P136	Q336181	what type of show would showtime at the apollo be considered as
 Q459079	R112	Q7972764	which organization is founded by bruce wasserstein
 Q4868444	P364	Q1860	What is the original language of bat-manga!: the secret history of batman in japan?
-Q2038126	P710	Q6476835	Where did the tuscarora war take place
+Q2038126	P710	Q5969534	Where did the tuscarora war take place
 Q1306377	P495	Q142	Where was the trout movie filmed?
 Q1824468	P136	Q37073	What kind of album is life in a beautiful light
 Q1628293	R1303	Q312264	Which instrumentalist played the bugle (instrument)?
@@ -4429,7 +4429,7 @@ Q1445893	P136	Q182015	what genre in netflix is lemming in
 Q7823951	P57	Q670296	who directed too romantic
 Q5997906	P136	Q183504	What is the genre of the aritst ilia
 Q37097	P20	Q16869	where in turkey did manuel ii palaiologos' place of death?
-Q11634794	P19	Q134635	What was the place of birth of hiroyuki takami
+Q28692588	P19	Q134635	What was the place of birth of hiroyuki takami
 Q4404946	P19	Q227	where was chingiz sadykhov born
 Q1686082	P27	Q30	what country gave jeb loy nichols his or her nationality
 Q3082606	P136	Q8253	What is the genre of the book called hothouse
@@ -4773,7 +4773,7 @@ Q5504023	P50	Q637306	who wrote friend of the devil
 Q6835617	P136	Q9730	what type of music does michaela paetsch make 
 Q1319266	P136	Q487914	What is the kind of music performed on the disappearance of adalia?
 Q907736	P123	Q780528	what is the publishing company responsible for bomberman land touch!
-Q183	R17	Q15021043	what is a second level division of germany?
+Q183	R17	Q10547	what is a second level division of germany?
 Q5648323	P413	Q1048902	Former baseball player hank fischer played which position?
 Q1082435	R19	Q4718022	which browns football player was born in west caldwell
 Q4831069	P413	Q201330	which soccer position is played by ayden duffy
@@ -4905,7 +4905,7 @@ Q4019218	P19	Q3310624	Where was weyinmi efejuku born?
 Q17056944	P175	Q602951	is rhett miller or beyonce the artist associated with mythologies
 Q7359949	P19	Q437	where is rok hanžič from
 Q5475568	P364	Q1860	what's the language that four stones for kanemitsu was filmed in
-Q2998279	P136	Q828322	What genre of cvg game is linus spacehead's cosmic crusade
+Q2331936	P136	Q828322	What genre of cvg game is linus spacehead's cosmic crusade
 Q1284215	P21	Q6581097	What is the sex of edgar wilson
 Q28389	R106	Q3440049	Name a professional screenwriter
 Q1156	R19	Q3461215	what indian screenwriter was born in mumbai
@@ -5016,7 +5016,7 @@ Q5244121	P21	Q6581097	What is the gender of destorm
 Q1338008	P136	Q130232	what genre of film is emma?
 Q6448651	P170	Q4849853	who created kutumb
 Q3932261	P413	Q280658	name the football position that reis ashraf  plays
-Q13627677	R136	Q6983152	what is an artist that creates psychobilly music
+Q13627677	R136	Q12132225	what is an artist that creates psychobilly music
 Q514376	P413	Q336286	Which position does athirson mazolli e oliveira play in football
 Q607750	P397	Q525	which star does 6907 harryford orbit
 Q3404358	P27	Q25	Where is Julien MacDonald from?
@@ -5193,7 +5193,7 @@ Q4940623	P495	Q145	What country was bomber harris flimed in
 Q3826557	P495	Q17	What is the country of origin for the film hanzo the razor: sword of justice?
 Q7301356	P136	Q1361181	what type of game is realmz
 Q1649787	P86	Q1396434	This British Indian musician contributed the music for the film midnights children.
-Q1379286	P136	Q9730	what music is paul grabowsky known for?
+Q25550430286	P136	Q9730	what music is paul grabowsky known for?
 Q1054574	R136	Q8057926	what is a film in the romance film genre?
 Q518536	P19	Q16	which northern country was osborne colson born in?
 Q6225463	P19	Q40435	where was john caslione born in?
@@ -5365,7 +5365,7 @@ Q26600	R19	Q11411281	who was born in fukuoka
 Q2061634	P136	Q372103	What genre is the presets?
 Q2288328	P272	Q186941	What production company produced the matinee idol?
 Q53453	P136	Q484641	what type of music does alain souchon make 
-Q5300232	P413	Q1050571	which position in baseball did doug adams play?
+Q2916704	P413	Q1050571	which position in baseball did doug adams play?
 Q193592	R413	Q7926153	who plays midfielder 
 Q432694	P53	Q34821	which famous family is patricia kennedy lawford a member of 
 Q3088557	P27	Q30	where is vola vale from
@@ -5492,7 +5492,7 @@ Q244968	P140	Q2128768	what type of religious practice doe maharishi mahesh yogi 
 Q4658838	P364	Q7033959	What language is a pillow case of mystery broadcast in
 Q1509872	P1408	Q49201	which area does wgme-tv serve
 Q200092	R136	Q7447044	Name a horror book. 
-Q2166646	R136	Q5039383	Name a film in the classics netflix genre.
+Q2166646	R136	Q3227907	Name a film in the classics netflix genre.
 Q2021531	R136	Q16637007	What's a frankenstein monster film
 Q11399	R136	Q7169534	What's the name of a rock music artist?
 Q4014551	P136	Q188473	What kind of film is day of the animals?
@@ -5569,7 +5569,7 @@ Q3777482	P21	Q6581072	What gender is Roisin Shortall?
 Q440631	P40	Q1669326	who is one of oliver ames's children 
 Q17884	R136	Q1780723	Which film is of the lgbt genre?
 Q5932555	P21	Q6581097	what sex is hugh rossi
-Q8053490	P21	Q6581097	what is the gender identity of yiannis papaioannou
+Q1522683	P21	Q6581097	what is the gender identity of yiannis papaioannou
 Q7298552	P21	Q6581097	what is the gender identity associated with raymond allen
 Q4006266	P136	Q105527	what kind of music on upside downside?
 Q3118802	P27	Q30	what is the nationality of  robert sapolsky
@@ -5711,7 +5711,7 @@ Q460151	P509	Q12152	what deadly disease killed fred m. vinson
 Q6223118	P19	Q2572461	what is the name of the city where  john brewster, jr. was born
 Q1332469	P495	Q30	Which nation filmed spread
 Q188648	P264	Q387539	what is the label that raven-symoné is under
-Q1379587	P170	Q504720	What american writer created eva, ganz mein fall
+Q25550430587	P170	Q504720	What american writer created eva, ganz mein fall
 Q2172124	P421	Q3238805	what time zone is used in kipnuk
 Q17019536	P136	Q272167	what type of music is out of view
 Q5967378	R136	Q6928410	What is an example of a speculative fiction book
@@ -5755,7 +5755,7 @@ Q16832142	P19	Q668	which country was surbhi tiwari born in?
 Q2177234	P27	Q55	What is marja habraken's country of nationality?
 Q57596	P140	Q42504	what is the religion of  shawn bradley
 Q4543172	P31	Q3863	Which category of celestial object is (35317) 1997 aq23
-Q18420748	P170	Q3292795	Who is the creator of zom?
+Q8073711	P170	Q3292795	Who is the creator of zom?
 Q3071	R136	Q5337803	A film in the punk rock genre is?
 Q1197735	P50	Q16867	who wrote the fall of the house of usher
 Q4788262	P421	Q3134980	what is ardrossan's time zone
@@ -5848,7 +5848,7 @@ Q3044	P21	Q6581097	what gender is charlemagne
 Q718581	P21	Q6581097	What is daron acemoglu's gender?
 Q8341	R136	Q7887020	what are jazz albums
 Q47441	P136	Q130232	What genre of television does le cœur a ses raisons fall underneath?
-Q155	R17	Q2007609	Name a city in brazil.
+Q155	R17	Q22062326	Name a city in brazil.
 Q3268260	P21	Q6581097	what is theodore hamberg's gender 
 Q7810930	P136	Q459290	what type of film is to find a man
 Q5213629	P136	Q11399	which genre of music does dan hall play in?
@@ -5916,7 +5916,7 @@ Q1321	R136	Q310427	what movie uses Spanish language in netflix
 Q172214	P19	Q68136	Which city and country was toni branca born in
 Q1668696	P136	Q483352	what kind of genre does izegrim play 
 Q131252	P112	Q2546810	Who was the founder of university of chicago
-Q7750757	P136	Q319221	what is the genre in the movie the mcconnell story
+Q3227676	P136	Q319221	what is the genre in the movie the mcconnell story
 Q2600504	P19	Q3108251	where was hugh maclennan born
 Q130232	R136	Q5350178	which film is in the genre drama
 Q3575284	P495	Q17	What is the country of origin of the film zero woman: assassin lovers?
@@ -5979,7 +5979,7 @@ Q1401	P737	Q8018	who was petrarch influenced by
 Q1002251	P136	Q200092	what genre is the film bug (2006 film)
 Q1797779	P21	Q6581097	What gender is L.L Marshall?
 Q441152	P509	Q3739104	How did fadwa touqan die
-Q379671	R136	Q7877290	Who is an artist that would associated themselves with post-grunge
+Q379671	R136	Q4002634	Who is an artist that would associated themselves with post-grunge
 Q766612	P404	Q6895044	what is the gameplayer mode for europa universalis: rome?
 Q1641839	R136	Q3072543	what is an example of an experimental rock album?
 Q7422671	P162	Q612007	who produced the film sarah palin: you betcha!
@@ -6492,7 +6492,7 @@ Q83270	R136	Q7587468	What's a hard rock album?
 Q6745620	P59	Q9256	What constellation is psi3 aquarii in
 Q504435	R131	Q1999219	What are cities in avoyelles parish, louisiana
 Q13422988	P136	Q11399	What type of album is wildside?
-Q3869374	P136	Q860750	what type of game is nascar rumble?
+Q2045289	P136	Q860750	what type of game is nascar rumble?
 Q24503	P737	Q5912	who influenced michael craig-martin
 Q5252666	P27	Q83286	which country is dejan jurkič from
 Q1808983	P106	Q482980	What is michelle paver's profession?
@@ -6930,7 +6930,7 @@ Q1315100	P196	Q2179	What asteroid group is 8087 kazutaka a member of?
 Q302762	P264	Q4883239	what label is barry manilow with 
 Q785224	P364	Q1860	Which language is the tv show the lost room in
 Q459290	R136	Q169087	what are indie dramas
-Q2076124	P710	Q1967337	what island was involved in the mytilenean revolt
+Q2076124	P710	Q211817	what island was involved in the mytilenean revolt
 Q16731552	P19	Q49111	what is the birthplace of ian lithgow
 Q2082933	P21	Q6581097	Mexican soccer player juan carlos medina is what gender?
 Q18086784	P364	Q1860	in which language is the broadminded movie spoken 
@@ -7079,7 +7079,7 @@ Q1027823	R19	Q7815075	what's  the name of a cricket umpire born in paddington
 Q5243089	P136	Q10926	who genre is discussed in daybreak
 Q668	R136	Q7709822	whats a movie title that is considered to be an india genre
 Q569704	P21	Q6581097	What gender is ansgar brinkmann?
-Q5302873	P136	Q842782	what type of genre is down three dark streets
+Q23017561	P136	Q842782	what type of genre is down three dark streets
 Q6780114	P21	Q6581072	What is mary losseff's gender
 Q33999	R106	Q66548	Name an actor
 Q717326	P136	Q200092	What genre is the other wind
@@ -8154,7 +8154,7 @@ Q7659095	P175	Q44641	who was the artist for switched-on bach ii
 Q1368195	R413	Q6214262	name a player who played the baseball position second baseman.
 Q882739	P17	Q1049	which county contains blue nile
 Q5358245	P136	Q37073	what genre of music is on the electronic eden album
-Q3434066	P178	Q1172213	what game developer released the game road blaster
+Q2113943	P178	Q1172213	what game developer released the game road blaster
 Q217831	R19	Q7114385	who was born in greenock
 Q4912717	P413	Q1048902	What position does billy hoeft play in baseball
 Q153058	P196	Q2179	where is 4228 nemiro located 
@@ -8253,7 +8253,7 @@ Q2140674	R509	Q6686927	Who died from ballistic trauma?
 Q7908017	P264	Q38903	what label does  václav Žáček belong to
 Q256447	P136	Q856872	What kind of music is on the album follow the leader
 Q1116894	P136	Q130232	what kind of tv show is the eleventh hour
-Q2133728	P136	Q3361944	what kind of game is football manager 2008?
+Q2133728	P136	Q1610017	what kind of game is football manager 2008?
 Q1235040	R178	Q911619	What is a game domark developed?
 Q4759686	P27	Q36	where was  andrzej pałys born
 Q6239623	P27	Q30	which country does john hollinger belong to?
@@ -8624,7 +8624,7 @@ Q5967715	P136	Q1321	What netflix genre is coleccion pedro infante: la oveja negr
 Q16192877	P140	Q432	idris phillips follows this major religion. 
 Q10318324	P19	Q174	Where was lilia moritz schwarcz born
 Q1703679	P140	Q9592	which religion is theresa of portugal, countess of flanders
-Q3132537	P19	Q64	where was henrique martins born
+Q19668636	P19	Q64	where was henrique martins born
 Q3403358	P364	Q7737	What language is spoken in prince vladimir (film)
 Q3680812	P364	Q652	what language  is in the film  clint the stranger
 Q2598568	P676	Q19848	Who wrote the lyrics for government hooker?
@@ -8984,7 +8984,7 @@ Q3840530	P495	Q30	Which country filmed lukes speedy club life
 Q16010120	P607	Q362	which war was joachim schlichting involved in?
 Q483251	R136	Q687651	who plays death metal music?
 Q1938388	R40	Q477527	Who is the father of the biblical figure miriam?
-Q7727972	P175	Q1379531	which artist recorded the crawling distance 
+Q7727972	P175	Q25550430531	which artist recorded the crawling distance 
 Q2706975	P19	Q179385	where was peter brabrook born 
 Q587048	P397	Q525	what is the orbital relationship of 12310 londontario
 Q429852	P136	Q11366	What type of music does sug produce?
@@ -9025,7 +9025,7 @@ Q638	R136	Q549336	what is an example of a music program?
 Q917998	R115	Q251090	what team plays at the docklands stadium
 Q1067581	P136	Q23916	what kind of video game is wario land: shake it!
 Q3056718	P27	Q31	Which country does ermano fegatilli have nationality in
-Q2056297	R175	Q11836302	what is the name of pastor troy's album
+Q2056297	R175	Q7605059	what is the name of pastor troy's album
 Q6220026	P27	Q30	where is john b. mansbridge's country of nationality
 Q208850	R404	Q536366	what is a single-player created by Ubisoft Casablanca
 Q164983	R607	Q7411397	Who was a person involved in battle of gallipoli?
@@ -9119,7 +9119,7 @@ Q3522642	P40	Q6727242	Who is a child of vairamuthu
 Q132311	R136	Q468121	Name an author in the fantasy book genre. 
 Q5304483	P495	Q30	where was dr. wonders workshop originally from
 Q826045	P27	Q40	what nationality is bernhard themessl 
-Q84	R19	Q3048496	Who is someone born in london
+Q84	R19	Q56492411	Who is someone born in london
 Q1068054	P364	Q1860	What original language was the shadow over innsmouth written in
 Q941023	R421	Q2536927	what is located in the eastern daylight time?
 Q866307	P138	Q959123	who is kettering named after
@@ -9474,7 +9474,7 @@ Q2053824	P509	Q216169	how did norton knatchbull, 6th baron brabourne die?
 Q548710	P140	Q6423963	What religion does jaja wachuku practice
 Q16214485	P136	Q131272	what type of music does lady daisey make
 Q6269013	P136	Q11399	What kind of music is join the band?
-Q8774954	P27	Q96	What is elizabeth cervantes's nationality
+Q5362557	P27	Q96	What is elizabeth cervantes's nationality
 Q15180	R19	Q167216	Who was born in soviet union
 Q22890	R19	Q8014742	Who was born in ireland?
 Q5703434	P136	Q29	What genre on netflix is arena en los bolsillos categorized under

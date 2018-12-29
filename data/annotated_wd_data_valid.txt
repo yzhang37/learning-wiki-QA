@@ -938,7 +938,7 @@ Q1452440	R57	Q1331230	which movie is directed by fred wilcox
 Q5994	R1303	Q1001203	What is the name of someone who plays piano
 Q5469640	P364	Q1860	what language is used in forget about it
 Q148437	P397	Q525	what does 225 henrietta orbit?
-Q7623237	P136	Q852767	What genre is the album strength in numbers considered to be?
+Q3975993	P136	Q852767	What genre is the album strength in numbers considered to be?
 Q65340	R50	Q511823	what books have konrad duden written?
 Q2033042	P364	Q7737	which language is the film the snow maiden released in
 Q1142666	P710	Q5690	who was involved in battle of eretria
@@ -1036,7 +1036,7 @@ Q507233	P607	Q40949	Which war did charles lynch participate in
 Q7299645	P264	Q3001888	what company is razorback signed with?
 Q304030	P86	Q360399	who composed the music for eat pray love
 Q44281	R138	Q6694600	what school was named after  ignatius of loyola
-Q3986708	P136	Q1054574	What was the genre of the film the dumb girl of portici
+Q11339333	P136	Q1054574	What was the genre of the film the dumb girl of portici
 Q1361271	P1303	Q11404	What instrument does the artist ryan leslie play
 Q1413060	P27	Q28	What is pál zolnay's nationality?
 Q842256	R136	Q7011259	which musical films were broadcasted in israel?
@@ -1056,7 +1056,7 @@ Q208344	P162	Q59259	who is the producer of armageddon
 Q7613544	P21	Q6581097	which gender does steve parker belong to
 Q2065046	P276	Q161491	where did battle of reading happen?
 Q4185452	P136	Q130232	What kind of film is 03:34: earthquake in chile
-Q5596265	R162	Q5890	Which film did grant hill produce?
+Q1543176	R162	Q5890	Which film did grant hill produce?
 Q3056818	P21	Q6581097	what gender is ernest adams 
 Q1588848	P136	Q217597	What sort of album is hate culture
 Q494806	P17	Q30	benton county is a second level dvision of which nation
@@ -1294,7 +1294,7 @@ Q30	R19	Q7670499	Who is a southern author born in the united states
 Q3597013	P196	Q2179	what asteroid group is 11161 daibosatsu a part of
 Q3818060	P50	Q319308	Who wrote the mind's i 
 Q20378	R136	Q368907	What is the name of a alternative metal album
-Q470152	R175	Q16145275	What is a live album of alejandra guzman?
+Q470152	R175	Q4714448	What is a live album of alejandra guzman?
 Q640259	P106	Q947873	what is allen ludden's profession in the entertainment industry?
 Q1938263	P21	Q6581097	what is mirko boland's gender
 Q826335	P136	Q226730	what kind of film is kohlhiesel's daughters
@@ -1430,7 +1430,7 @@ Q3210677	P136	Q182015	what kind of film is the turn of the screw
 Q3824302	P413	Q280658	what position does jaime asensio de la fuente play in football
 Q1900360	R162	Q1191928	what film was produced by mark radcliffe?
 Q1068968	P136	Q838368	What type of film is a king in new york
-Q3868545	P175	Q457125	which artist created the album music is the healing force of the universe
+Q3328513	P175	Q457125	which artist created the album music is the healing force of the universe
 Q6834649	P21	Q6581097	is michael storm male or female
 Q188473	R136	Q1073464	What's an example of an action film
 Q978957	P27	Q750	where is marcelo carballo from
@@ -1540,7 +1540,7 @@ Q714568	P20	Q64	Where did artur landsberger die?
 Q7737625	P495	Q183	Where was the amateur adventure released?
 Q1297	R19	Q6388526	who was born in chicago
 Q7513772	P364	Q9035	what language does sikke'n familie belong to 
-Q216179	R175	Q4770380	what album is by bryan ferry?
+Q216179	R175	Q3618271	what album is by bryan ferry?
 Q680612	P20	Q6602	Where did dominique villars die
 Q996995	P495	Q145	what country did the film shout at the devil originate from
 Q326522	P20	Q25395	where did nick massi die?
@@ -1871,7 +1871,7 @@ Q1677244	R175	Q7561092	what album did jack wilson release?
 Q4501461	R136	Q7581889	what is a musician that plays christian ska music
 Q10958845	P364	Q1571	what language is spoken in zenda
 Q361653	P172	Q49078	what is james a. micheners ethnicity
-Q558226	R175	Q4115193	What is an album by sami yusuf?
+Q558226	R175	Q3331280	What is an album by sami yusuf?
 Q705550	P20	Q49111	which city in the USA is lawrence joseph henderson from
 Q93028	P27	Q30	what nation is charles e. leiserson from
 Q17369	P421	Q25989	what time zone is giarole located in?
@@ -2089,7 +2089,7 @@ Q337976	P27	Q145	what nationality does john hodge belong to
 Q6429721	P20	Q157725	Name the location where konrad hupfer died
 Q2064713	P413	Q280658	what soccer position does vadym rybalchenko play
 Q569372	P364	Q397	What is a language of the film into great silence?
-Q10381849	P175	Q527055	who released the album the time machine tour?
+Q7769325	P175	Q527055	who released the album the time machine tour?
 Q8341	R136	Q3819026	what is the name of the live solo piano jazz album 
 Q66245	R344	Q701584	what movie was directed by oskar fischinger
 Q5094179	P57	Q797775	who directed the film chetna?
@@ -2277,7 +2277,7 @@ Q336286	R413	Q5534254	Which former football player played defender?
 Q16274950	P364	Q1860	What language was aye, and gomorrah, and other stories originally written in?
 Q6318073	P21	Q6581097	which gender is justin roland
 Q130232	R136	Q6967672	what is the name of a  drama movie by abdellatif abdelhamid
-Q5085769	P19	Q1720	Where in germany was charline von heyl's place of birth?
+Q2960916	P19	Q1720	Where in germany was charline von heyl's place of birth?
 Q5181063	P21	Q6581097	What was craig huby's gender?
 Q3506794	P20	Q34006	Where in California did syd saylor died in?
 Q6581097	R21	Q2287724	name a character who is male.
@@ -2326,7 +2326,7 @@ Q5301225	P136	Q1730388	what genre does douglas b. green  perform
 Q17300515	P27	Q786	Where is juan jaime from?
 Q7183591	P20	Q49111	what city did philip gale die in
 Q684403	P17	Q183	What European country is stör located?
-Q7421648	R175	Q16836883	What is the name of sara groves's 2009 album?
+Q6121743	R175	Q16836883	What is the name of sara groves's 2009 album?
 Q723578	P20	Q490385	What city was jon barwise in when he died
 Q4699218	P19	Q3733	where was aissata toure born 
 Q1363756	P106	Q6625963	What is paul goma's job?
@@ -2452,7 +2452,7 @@ Q4166620	P136	Q200092	what sort of film is pact with the devil
 Q394727	P19	Q1085	where is agnes of bohemia's birthplace
 Q44272	P737	Q207359	Who was michel foucault influenced by?
 Q7435558	P1040	Q1526143	who is the editor for scotched in scotland?
-Q135156	P162	Q3816698	who was the producer for the heat
+Q135156	P162	Q15069859	who was the producer for the heat
 Q725170	R162	Q110138	don simpson  produced what film
 Q6983826	P413	Q280658	Which position does ndubuisi eze play?
 Q188473	R136	Q3531049	what Tamil action film was filmed in 2009?
@@ -2663,7 +2663,7 @@ Q778755	P58	Q72792	who wrote the story for the film safety last!
 Q70400	P21	Q6581097	is ludwig suthaus male or female
 Q593655	R19	Q221125	who was born in east coker?
 Q6173843	P136	Q105527	what genre does the artist jeff friedl perform?
-Q13257933	P136	Q3246900	what kind of tv show is i am a singer
+Q13257933	P136	Q1955280	what kind of tv show is i am a singer
 Q127868	P140	Q10090	Which religion does m. g. ramachandran practice
 Q183504	R136	Q4959928	Name an artist from the indie rock genre
 Q2256372	P136	Q186472	What type of music is song to a seagull?
@@ -2961,7 +2961,7 @@ Q449743	P272	Q219400	which production company released the film always
 Q188478	R19	Q6543569	what city is the romanian former footballer brăila?
 Q7299760	P20	Q525775	where did raul davila die
 Q2563208	P710	Q12490507	What is an entity involved in siege of aleppo?
-Q7383026	P509	Q3739104	how did ruth hall die
+Q2177632	P509	Q3739104	how did ruth hall die
 Q7622942	P136	Q868855	what music genre is street sounds electro 10?
 Q1517901	P136	Q130232	what type of film is in the name of god
 Q7729195	P495	Q145	what country did the day today originate
@@ -3178,7 +3178,7 @@ Q9778	R136	Q70790	Name a German electronic music artist
 Q2317892	P86	Q160009	Who composed the song sober?
 Q171467	P27	Q38	what country is giovanni lavaggi from
 Q186170	R136	Q1539810	Who makes doom metal
-Q8341	R136	Q7033597	what is an example of a jazz album?
+Q8341	R136	Q1989728	what is an example of a jazz album?
 Q3158849	P19	Q90	where was jacques erwin born
 Q6933332	P136	Q188473	what kind of film is mujeres salvajes
 Q61	R19	Q4766525	WHo is someone that was born in washington, d.c.
@@ -3615,7 +3615,7 @@ Q6917205	P136	Q211573	what music does moth make?
 Q2086913	R421	Q2736433	what location is part of the north american central time zone
 Q7311496	P1303	Q5994	which instrument was played  in rem urasin
 Q2570328	P136	Q130232	What genre does rabid dogs best fall under?
-Q7262851	P364	Q1568	what language is spoken in the film pyar ka devta
+Q12438974	P364	Q1568	what language is spoken in the film pyar ka devta
 Q3134980	R421	Q2612059	which village is located in the mountain time zone
 Q130232	R136	Q1012729	what is a drama film?
 Q170435	R136	Q5990757	who is an artist that records trance music?
@@ -3650,7 +3650,7 @@ Q1044563	R123	Q5167265	What's a title published by snk playmore
 Q7727107	P136	Q58339	what genre is the complete boney m.
 Q6816616	P364	Q1860	what language is mendez vs. westminster: for all the children in?
 Q508143	P27	Q38	what is lorenzo balducci's country of nationality
-Q7713650	P136	Q616679	what is the genre of the album the anatomy of 
+Q3519777	P136	Q616679	what is the genre of the album the anatomy of 
 Q313166	P138	Q343065	who is the weddell seal named after
 Q6824112	P21	Q6581097	what is seong-min kang's gender?
 Q4635716	P136	Q1568	which genre of film is 36 ghante titled in netflix?
@@ -4861,7 +4861,7 @@ Q4832505	P364	Q36236	What language is azhakiya ravanan filmed in?
 Q7111404	P178	Q1045344	who developed outnumbered!
 Q3480757	P21	Q6581097	what is the sex of seumas o'kelly?
 Q3709870	P413	Q280658	which position did herby fortunat play in football?
-Q150804	P136	Q11694964	what kind of film is the pianist (2002 film)
+Q150804	P136	Q1196408	what kind of film is the pianist (2002 film)
 Q1343857	P19	Q11299	where was jon seda given birth
 Q2981169	P106	Q6625963	What is nikolaj frobenius's profession?
 Q174	R19	Q1948488	who is a person that was born in sao paulo
