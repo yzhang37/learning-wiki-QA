@@ -1,5 +1,8 @@
 # ignore python temporary files
 __pycache__
+.idea/
 
 # this project's temporary files and folders
 dump/
+logs/
+draft.py
