@@ -1,14 +1,33 @@
 import requests
 import ujson as json
-from src.cached_data import CachedData
+from src.kg_data_loader.cached_data import CachedData, CachedDataException
+
+
+class ReadOnlyProtected(CachedDataException):
+    pass
+
+
+class ValueNotCachedException(ReadOnlyProtected):
+    pass
 
 
 class WikiLabel(CachedData):
-    def __init__(self, dump_file_name):
+    def __init__(self, dump_file_name, is_read_only: bool=False):
         super().__init__(dump_file_name)
+        self._read_only = is_read_only
+
+    @property
+    def read_only(self):
+        return self._read_only
+
+    @read_only.setter
+    def read_only(self, value: bool):
+        self._read_only = value
 
     def _get_entity_data(self, item: str):
-        # check the validity of item name
+        if self.read_only:
+            raise ReadOnlyProtected
+        # TODO: check the validity of item name
         try:
             ret = requests.get("http://www.wikidata.org/entity/{0}".format(item))
             ret.raise_for_status()
@@ -23,6 +42,7 @@ class WikiLabel(CachedData):
             else:
                 raise Exception("error: {}".format(item))
             self._data[item] = {lang: item['value'] for lang, item in ret_data.items()}
+            self._to_save = True
         except Exception as ex:
             self._data[item] = None
             raise
@@ -30,10 +50,16 @@ class WikiLabel(CachedData):
 
     def invalidate(self, item: str):
         if item in self._data:
+            if self.read_only:
+                raise ReadOnlyProtected
             del self._data[item]
 
     def __getitem__(self, item: str):
         if item in self._data:
+            if self._data[item] is None:
+                raise ValueNotCachedException
             return self._data[item]
         else:
+            if self.read_only:
+                raise ValueNotCachedException
             return self._get_entity_data(item)
