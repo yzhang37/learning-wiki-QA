@@ -1,10 +1,23 @@
-from src.config import BaseConfig
 from src.kg_data_loader.wiki_entity import WikiLabel, ValueNotCachedException
 import Levenshtein
 import src.util.algorithm as algo
+from src.util.snippets import CalledProcessError, get_file_lines_quick
 from src.adv_types.nerbios import *
 import re
-config = BaseConfig()
+import tqdm
+from nltk.tokenize import TreebankWordTokenizer
+
+
+class CustomTreebankWordTokenizer(TreebankWordTokenizer):
+    """
+    对默认的 nltk.tokenize.TreebankWordTokenizer 做了修改：
+
+    | 原来                  | 现在                                  |
+    | --------------------- | ------------------------------------- |
+    | 只能分割 ... 的省略号 | 可以分割数量 >=3 的任意长度的省略号。 |
+    """
+    PUNCTUATION = TreebankWordTokenizer.PUNCTUATION.copy()
+    PUNCTUATION[3] = (re.compile(r'(\.{3,})'), r' \1 ')
 
 
 def default_edit_score(str1: str, str2: str):
@@ -22,21 +35,28 @@ def pre_process(
         original_data_file_path: str,
         entity_label: WikiLabel,
         prop_label: WikiLabel,
-        output_prased_source_path: str,
+        output_parsed_source_path: str,
         output_log_path: str,
-        str_distance_score_handler: function=default_edit_score,
-        dx_range_handler: function=lambda: range(0, 3),
+        str_distance_score_handler=default_edit_score,
+        dx_range_handler=lambda: range(0, 3),
         float_error_epsilon=1E-08):
 
+    word_tokenizer = CustomTreebankWordTokenizer()
+
     with open(original_data_file_path, 'r', encoding='utf-8') as fin_orig_data, \
-         open(output_prased_source_path, 'w', encoding='utf-8') as fout_prased_src, \
+         open(output_parsed_source_path, 'w', encoding='utf-8') as fout_prased_src, \
          open(output_log_path, 'w', encoding='utf-8') as fout_error:
 
-        for lin_num, line in enumerate(fin_orig_data):
+        try:
+            total_line_count = get_file_lines_quick(original_data_file_path)
+        except CalledProcessError:
+            total_line_count = None
+
+        for lin_num, line in enumerate(tqdm.tqdm(fin_orig_data, total=total_line_count)):
             # 每次都会得到一个：
             # 主语 id, 属性关系，宾语 id, 查询句子。
             subj, prop, obj, question = line.strip().split('\t')
-            question_words = list(filter(None, re.split(r' +|,|!+|\?+', question)))
+            question_words = word_tokenizer.tokenize(question)
             # # for output use
             # output_sentences = ["Ln {}".format(lin_num)]
 
@@ -118,6 +138,7 @@ def pre_process(
 
             if not tag_log_has_error:
                 out_line_log += " | OK"
+            else:
                 out_line_prased_source = ""
 
             fout_error.write(out_line_log + '\n')

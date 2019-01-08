@@ -1,9 +1,8 @@
 import os
 import tqdm
 import time
-import sys
 from src.config import BaseConfig
-from src.wiki_entity import WikiLabel
+from src.kg_data_loader.wiki_entity import WikiLabel
 
 # 配置信息
 config = BaseConfig()
