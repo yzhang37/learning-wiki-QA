@@ -24,6 +24,12 @@ class BaseConfig:
             "valid": pabs(pjoin(self.PATH_PROCESSED, "prased_source_valid.txt"))
         }
 
+        self.FILE_PROCESSED_ENTITY_BIOES = {
+            "train": pabs(pjoin(self.PATH_PROCESSED, "ner_tag_train.bmes")),
+            "test": pabs(pjoin(self.PATH_PROCESSED, "ner_tag_test.bmes")),
+            "valid": pabs(pjoin(self.PATH_PROCESSED, "ner_tag_valid.bmes"))
+        }
+
         self.FILE_DUMP_WD_ENTITY_LABEL = pabs(pjoin(self.PATH_DUMP, "wd_entity_label.pickle"))
         self.FILE_DUMP_WD_PROP_LABEL = pabs(pjoin(self.PATH_DUMP, "wd_prop_label.pickle"))
 

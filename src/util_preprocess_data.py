@@ -6,13 +6,14 @@ from src.util.snippets import unzip_dict
 config = BaseConfig()
 
 # 字典抽取函数
-# dat_unzip = lambda x: unzip_dict(x, "train", "valid", "test")
-dat_unzip = lambda x: unzip_dict(x, "test")
+dat_unzip = lambda x: unzip_dict(x, "train", "valid", "test")
+# dat_unzip = lambda x: unzip_dict(x, "test")
 
 
 dat_list = [
     config.FILE_DATA_WD_ORIGIN,
     config.FILE_PROCESSED_WD_PRASED,
+    config.FILE_PROCESSED_ENTITY_BIOES,
     config.FILE_LOGS_WD_PREPROCESS_STATUS
 ]
 
@@ -20,11 +21,12 @@ wiki_entity_label = WikiLabel(config.FILE_DUMP_WD_ENTITY_LABEL, is_read_only=Tru
 wiki_property_label = WikiLabel(config.FILE_DUMP_WD_PROP_LABEL, is_read_only=True)
 
 tulips = tuple(map(dat_unzip, dat_list))
-for orig_data, parsed_src, err_log in zip(*tulips):
+for orig_data, parsed_src, ner_entity_fil, err_log in zip(*tulips):
     pre_process(
         orig_data,
         wiki_entity_label,
         wiki_property_label,
         parsed_src,
+        ner_entity_fil,
         err_log
     )

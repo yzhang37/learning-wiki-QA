@@ -20,6 +20,30 @@ class CustomTreebankWordTokenizer(TreebankWordTokenizer):
     PUNCTUATION[3] = (re.compile(r'(\.{3,})'), r' \1 ')
 
 
+class NerBX(NerB):
+   def __init__(self):
+       super().__init__()
+       self._label = 'X'
+
+
+class NerIX(NerI):
+   def __init__(self):
+       super().__init__()
+       self._label = 'X'
+
+
+class NerEX(NerE):
+   def __init__(self):
+       super().__init__()
+       self._label = 'X'
+
+
+class NerSX(NerS):
+   def __init__(self):
+       super().__init__()
+       self._label = 'X'
+
+
 def default_edit_score(str1: str, str2: str):
     """
     缺省的字符串距离比较函数，使用 Levenshtein 编辑距离实现。
@@ -31,11 +55,62 @@ def default_edit_score(str1: str, str2: str):
     return (max_len - Levenshtein.distance(str1, str2)) / max_len
 
 
+def make_bioes_sequence(fields_list, total_num):
+    """
+    Given a list, contains a list of tuple, which is each field in a string.
+    Make the BIOES sequence.
+    :param fields_list: A list of bi-tuple.
+    :return: A list of sequence contains B, I, O, E, S element.
+    """
+    bio_sequence = [NerO() for _ in range(total_num)]
+
+    for pos in fields_list:
+        if pos[0] + 1 == pos[1]:
+            i, _ = pos
+            bio_sequence[i] = NerSX()
+        else:
+            for i in range(*pos):
+                if i == pos[0]:
+                    bio_sequence[i] = NerBX()
+                elif i == pos[1] - 1:
+                    bio_sequence[i] = NerEX()
+                else:
+                    if bio_sequence[i] == 'O':
+                        bio_sequence[i] = NerIX()
+    return bio_sequence
+
+
+def make_bio_sequence(fields_list, total_num):
+    """
+    Given a list, contains a list of tuple, which is each field in a string.
+    Make the BIO sequence
+    :param fields_list: A list of bi-tuple.
+    :return: A list of sequence contains B, I, O, E, S element.
+    """
+    bio_sequence = [NerO() for _ in range(total_num)]
+    # 转换分区的第一个为 B
+    for pos in fields_list:
+        for i in range(*pos):
+            bio_sequence[i].attribute = 'b' if i == pos[0] else 'i'
+    return bio_sequence
+
+
+def filter_ner_entity(bio_sequence, word_list, func):
+    new_word_list = []
+    for bio_item, word in zip(bio_sequence, word_list):
+        if bio_item == 'O':
+            new_word_list.append(word)
+        elif func(bio_item):
+            new_word_list.append('<e>')
+    return new_word_list
+
+
 def pre_process(
         original_data_file_path: str,
         entity_label: WikiLabel,
         prop_label: WikiLabel,
         output_parsed_source_path: str,
+        output_ner_entity_path: str,
         output_log_path: str,
         str_distance_score_handler=default_edit_score,
         dx_range_handler=lambda: range(0, 3),
@@ -45,6 +120,7 @@ def pre_process(
 
     with open(original_data_file_path, 'r', encoding='utf-8') as fin_orig_data, \
          open(output_parsed_source_path, 'w', encoding='utf-8') as fout_prased_src, \
+         open(output_ner_entity_path, 'w', encoding='utf-8') as fout_ner_entity, \
          open(output_log_path, 'w', encoding='utf-8') as fout_error:
 
         try:
@@ -57,14 +133,16 @@ def pre_process(
             # 主语 id, 属性关系，宾语 id, 查询句子。
             subj, prop, obj, question = line.strip().split('\t')
             question_words = word_tokenizer.tokenize(question)
-            # # for output use
-            # output_sentences = ["Ln {}".format(lin_num)]
 
+            ###############
+            # 输出使用
             out_line_log = "Ln {0}:".format(lin_num)
             out_line_prased_source = ""
+            out_line_ner_segment = ""
             tag_log_has_error = False
 
             ner_fields = []
+            # 遍历（语言，内容）
             for label_wiki_id in (subj, obj):
                 try:
                     pos_groups = set()
@@ -116,30 +194,26 @@ def pre_process(
                     bio_pos_list.append(pos)
 
                 bio_pos_list = algo.merge_position_tuples(bio_pos_list)
-                bio_sequence = [NerO() for _ in range(len(question_words))]
-                # 转换分区的第一个为 B
-                for pos in bio_pos_list:
-                    for i in range(*pos):
-                        bio_sequence[i].attribute = 'b' if i == pos[0] else 'i'
+                bio_sequence = make_bioes_sequence(bio_pos_list, len(question_words))
 
-                # 可以输出 bio_sequence
-                bio_filter_words = []
-                for word, bio in zip(question_words, bio_sequence):
-                    if bio == 'O':
-                        bio_filter_words.append(word)
-                    elif bio == 'B':
-                        bio_filter_words.append('<e>')
-
-                # 可以输出 bio_filter_words
+                # 输出根据 sequence，filtered 后的单词
+                bio_filter_words = filter_ner_entity(bio_sequence, question_words, lambda x: x == 'B' or x == 'S')
                 out_line_prased_source = ' '.join(bio_filter_words)
+                out_line_ner_segment = '\n'.join([
+                    "{0} {1}".format(word, ner_e) for word, ner_e in zip(question_words, bio_sequence)
+                ])
+
             else:
                 out_line_log += " | no entity recognized or low confidence"
                 tag_log_has_error = True
 
             if not tag_log_has_error:
                 out_line_log += " | OK"
+                out_line_ner_segment += "\n"
             else:
                 out_line_prased_source = ""
+                out_line_ner_segment = ""
 
             fout_error.write(out_line_log + '\n')
+            fout_ner_entity.write(out_line_ner_segment + '\n')
             fout_prased_src.write(out_line_prased_source + '\n')
