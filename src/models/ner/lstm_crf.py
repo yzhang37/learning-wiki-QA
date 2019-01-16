@@ -17,9 +17,9 @@ def log_sum_exp(vec):
 
 class LSTM_CRF(nn.Module):
     def __init__(self,
-                 vocab_size, target_size, target_start_id, target_end_id,
-                 word_embedding_dim, word_hidden_size, word_rnn_layers_count,
-                 char_embedding_dim, char_hidden_size, char_rnn_layers_count):
+                 vocab_size: int, target_size: int, target_start_id: int, target_end_id: int,
+                 word_embedding_dim: int, word_hidden_size: int, word_rnn_layers_count: int,
+                 char_embedding_dim: int, char_hidden_size: int, char_rnn_layers_count: int):
         super().__init__()
 
         self.vocab_size = vocab_size
@@ -38,28 +38,37 @@ class LSTM_CRF(nn.Module):
             self.word_hidden_size // 2,
             num_layers=self.word_rnn_layers_count,
             bidirectional=True,
-            dropout=self.drop_out_ratio
         )
 
         self.char_embedding_dim = char_embedding_dim
         self.char_hidden_size = char_hidden_size
         self.char_rnn_layers_count = char_rnn_layers_count
 
-        raise NotImplementedError("还没有定义 CRF 层！")
+        self.hidden2tag = nn.Linear(self.word_hidden_size, self.target_size)
+
+        # Matrix of transition parameters.  Entry i,j is the score of
+        # transitioning *to* i *from* j.
+        self.transitions = nn.Parameter(
+            torch.randn(self.target_size, self.target_size))
+
+        # These two statements enforce the constraint that we never transfer
+        # to the start tag and we never transfer from the stop tag
+        self.transitions.data[self.START_TAG_ID, :] = -10000
+        self.transitions.data[:, self.END_TAG_ID] = -10000
 
     def _get_lstm_features(self, sentence, word_hidden=None):
         # 首先处理并计算
         word_embeds = self.the_word_embedding(sentence)  # [n, wembd_size]
-        word_embeds = word_embeds.view(1, -1)  # [n, wembd_size] -> [1, n * wembd_size]
+        word_embeds = word_embeds.view(len(sentence), 1, -1)  # [n, wembd_size] -> [1, n * wembd_size]
 
         word_lstm_out, word_hidden = self.the_word_lstm(word_embeds, word_hidden)
-        word_lstm_out = word_lstm_out.view(-1, self.word_hidden_size)
+        word_lstm_out = word_lstm_out.view(len(sentence), self.word_hidden_size)
 
-        return word_lstm_out
+        return self.hidden2tag(word_lstm_out)
 
     def _forward_alg(self, feats):
         # Do the forward algorithm to compute the partition function
-        init_alphas = torch.full((1, self.tagset_size), -10000.)
+        init_alphas = torch.full((1, self.target_size), -10000.)
         # START_TAG has all of the score.
         init_alphas[0][self.START_TAG_ID] = 0.
 
@@ -69,11 +78,11 @@ class LSTM_CRF(nn.Module):
         # Iterate through the sentence
         for feat in feats:
             alphas_t = []  # The forward tensors at this timestep
-            for next_tag in range(self.tagset_size):
+            for next_tag in range(self.target_size):
                 # broadcast the emission score: it is the same regardless of
                 # the previous tag
                 emit_score = feat[next_tag].view(
-                    1, -1).expand(1, self.tagset_size)
+                    1, -1).expand(1, self.target_size)
                 # the ith entry of trans_score is the score of transitioning to
                 # next_tag from i
                 trans_score = self.transitions[next_tag].view(1, -1)
@@ -102,7 +111,7 @@ class LSTM_CRF(nn.Module):
         backpointers = []
 
         # Initialize the viterbi variables in log space
-        init_vvars = torch.full((1, self.tagset_size), -10000.)
+        init_vvars = torch.full((1, self.target_size), -10000.)
         init_vvars[0][self.START_TAG_ID] = 0
 
         # forward_var at step i holds the viterbi variables for step i-1
@@ -111,7 +120,7 @@ class LSTM_CRF(nn.Module):
             bptrs_t = []  # holds the backpointers for this step
             viterbivars_t = []  # holds the viterbi variables for this step
 
-            for next_tag in range(self.tagset_size):
+            for next_tag in range(self.target_size):
                 # next_tag_var[i] holds the viterbi variable for tag i at the
                 # previous step, plus the score of transitioning
                 # from tag i to next_tag.
@@ -142,8 +151,8 @@ class LSTM_CRF(nn.Module):
         best_path.reverse()
         return path_score, best_path
 
-    def neg_log_likelihood(self, sentence, tags):
-        feats = self._get_lstm_features(sentence)
+    def neg_log_likelihood(self, sentence, tags, word_hidden=None):
+        feats = self._get_lstm_features(sentence, word_hidden)
         forward_score = self._forward_alg(feats)
         gold_score = self._score_sentence(feats, tags)
         return forward_score - gold_score
