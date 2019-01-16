@@ -1,2 +1,5 @@
+ujson
+python-Levenshtein
+tqdm
 requests
 nltk
